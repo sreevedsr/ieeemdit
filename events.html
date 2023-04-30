@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IEEE Student Branch - Events Gallery</title>
+    <link rel="stylesheet" href="events.css">
+</head>
+<body>
+    <header>
+        <h1>M.Dasan Institute Of Technology</h1>
+        <h2>IEEE STUDENT BRANCH</h2>
+        <div class="hamburger-menu">
+            <ul class="menu__box">
+              <li><a class="menu__item" href="home.html">Home</a></li>
+              <li><a class="menu__item" href="reg.html">Register</a></li>
+              <li><a class="menu__item" href="exec.html">Team</a></li>
+              <li><a class="menu__item" href="events.html">Events</a></li>
+              <li><a class="menu__item" href="https://www.instagram.com/ieee_mdit/">Instagram</a></li>
+            </ul>
+          </div>
+    </header>
+    <main>
+        <section id="events-section">
+            <h2>Our Events:</h2>
+            <!-- list of events will be displayed here, which can be dynamically generated using JavaScript -->
+        </section>
+        <section id="add-event-section">
+            <h2>Add Event:</h2>
+            <form>
+                <label for="event-name">Event Name:</label>
+                <input type="text" id="event-name" name="event-name" required><br>
+
+                <label for="event-date">Event Date:</label>
+                <input type="date" id="event-date" name="event-date" required><br>
+
+                <label for="event-description">Event Description:</label>
+                <textarea id="event-description" name="event-description" required></textarea><br>
+
+                <button type="submit" id="add-event-btn">Add Event</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>© 2021 IEEE Student Branch - MDIT Engineering College.</p>
+    </footer>
+    <script src="events.js"></script>
+</body>
+</html>

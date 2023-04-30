@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>IEEE Student Branch Registration Form</title>
+    <link rel="stylesheet" href="registration.css">
+    <script src="reg.js"></script>
+  </head>
+  <body>
+    <header>
+        <h1>M.Dasan Institute Of Technology</h1>
+        <h2>IEEE STUDENT BRANCH</h2>
+        <div class="hamburger-menu">
+            <ul class="menu__box">
+              <li><a class="menu__item" href="home.html">Home</a></li>
+              <li><a class="menu__item" href="reg.html">Register</a></li>
+              <li><a class="menu__item" href="exec.html">Team</a></li>
+              <li><a class="menu__item" href="events.html">Events</a></li>
+              <li><a class="menu__item" href="https://www.instagram.com/ieee_mdit/">Instagram</a></li>
+            </ul>
+          </div>
+    </header>
+    <div class="container">
+        <div class="title">Registration</div>
+        <div class="content">
+          <form action="#">
+            <div class="user-details">
+              
+              <div class="input-box">
+                <span class="details">First Name</span>
+                <input type="text" placeholder="Enter your name" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Last name</span>
+                <input type="text" placeholder="Enter your username" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Email</span>
+                <input type="text" placeholder="Enter your email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required title="Please enter a valid email address">
+              </div>
+              <div class="input-box">
+                <span class="details">Phone Number</span>
+                <input type="text" placeholder="Enter your number" pattern="[1-9][0-9]{9}" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Birthday</span>
+                <label for="birthdate">
+                <input type="date" id="birthdate" name="birthdate" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Semester</span>
+                <select required>
+                    <option value="">Select sem</option>
+                    <option value="1">S1</option>
+                    <option value="2">S2</option>
+                    <option value="3">S3</option>
+                    <option value="4">S4</option>
+                    <option value="4">S5</option>
+                    <option value="4">S6</option>
+                    <option value="4">S7</option>
+                    <option value="4">S8</option>
+                  </select>
+              </div>
+              <div class="input-box">
+                <span class="details">Password</span>
+                <input type="text" placeholder="Enter your password" required title="Password must contain at least one digit, lowercase and uppercase letter, and a special character, and have a minimum length of 8 characters">
+              </div>
+              <div class="input-box">
+                <span class="details">Confirm Password</span>
+                <input type="text" placeholder="Confirm your password" required>
+              </div>
+            </div>
+            <div class="button">
+              <input type="submit" value="Register">
+            </div>
+          </form>
+         
+        </div>
+      </div>
+    
+    </body> 
+    </html>
